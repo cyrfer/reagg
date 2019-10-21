@@ -115,3 +115,26 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+## Operations
+Operations must conform to the interface usage:
+```
+const next = stage.operation(context, stage.payload);
+```
+Custom operations can be used in your actions. Please submit a PR if you have an operation that will be generally useful to the community.
+
+The operations that are currently distributed is found in `./src/operations.js`. The following operations are considered part of the interface of `reagg`:
+
+- REPLACE_ARRAY_ELEMENT
+- MERGE_ARRAY_ELEMENTS
+- FILTER_ARRAY
+- SORT_ARRAY
+- UNWIND_TO_ARRAY
+- MAP_ARRAY_ITEMS
+- MAP_OBJECT_FROM_KEYS
+- INDEX_FROM_ARRAY
+- ARRAY_FROM_INDEX
+- ARRAY_FROM_KEYS
+- MERGE_OBJECT_SHALLOW_PAYLOAD_CONTEXT
+- MERGE_OBJECT_SHALLOW_CONTEXT_PAYLOAD
+- OVERWRITE

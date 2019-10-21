@@ -1,0 +1,40 @@
+{
+  "name": "reagg",
+  "version": "0.1.0",
+  "description": "state management inspired by mongodb aggregation",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir ./dist --source-maps",
+    "test": "nyc mocha --require @babel/register test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrfer/reagg.git"
+  },
+  "keywords": [
+    "redux",
+    "state",
+    "management"
+  ],
+  "author": "john k. grant <cyrfer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyrfer/reagg/issues"
+  },
+  "homepage": "https://github.com/cyrfer/reagg#readme",
+  "dependencies": {
+    "deepdown": "^1.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

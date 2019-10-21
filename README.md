@@ -78,6 +78,7 @@ export updateMovies = (newData) => {
 ```
 
 ## Usage - Dispatch Redux Actions
+Simply invoke the action creator function you defined previously by passing the data from a network call.
 
 ```
 import React from 'react'
@@ -99,6 +100,8 @@ const MyComponent = () => {
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import reagg from 'reagg'
+import App from './App'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 // alteratively you can call the reagg reducer from your reducer.
 const store = createStore(reagg.state.reduxReducer, {})
